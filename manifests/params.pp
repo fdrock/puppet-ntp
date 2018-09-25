@@ -11,6 +11,6 @@ class ntp::params {
 
   $service_name = $facts['os']['family'] ? {
     'Debian' => 'ntp',
-    dedault  => 'ntpd',
+    default  => 'ntpd',
   }
 }
